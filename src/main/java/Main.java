@@ -24,8 +24,17 @@ public class Main {
         return fibStreamResult;
     }
 
+
+    public static int fibREC ( int numbers ){
+            if(numbers<3)
+                return 1;
+            return fibREC(numbers-2)+fibREC(numbers-1);
+    }
+
+
     public static void main(String[] args) {
         System.out.println(  fibStream(6)  );
+        System.out.println(fibREC(6) );
     }
 
 
