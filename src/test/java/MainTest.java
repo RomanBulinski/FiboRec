@@ -10,7 +10,6 @@ public class MainTest {
         Integer[] result = {0,1,1,2,3,5};
         Integer[] mainresult = Main.fibStream(5).toArray(new Integer[5]);
         assertArrayEquals( result , mainresult);
-
     }
 
 
@@ -19,5 +18,9 @@ public class MainTest {
         assertEquals( 8 , Main.fibREC(6));
     }
 
+    @Test
+    public void testfibREC2(){
+        assertEquals( 13 , Main.fibREC(7));
+    }
 
 }
