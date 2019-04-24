@@ -17,7 +17,6 @@ public class Main {
 
             int i = fibStreamResult.get(fibStreamResult.size()-1);
             int j = fibStreamResult.get(fibStreamResult.size()-2);
-            System.out.println( i+"+"+j);
             fibStreamResult.add( i+j );
             counter++;
         }
